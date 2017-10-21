@@ -1,22 +1,38 @@
-{
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
-        }
-    }
-}
+[
+    {
+        "id":0,
+        "name":"Taman A",
+        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
+        "address":"Jl. X Kota Bandung",
+        "lat":"-6.9097138",
+        "lon":"107.6102038"
+    },
+    {
+        "id":1,
+        "name":"Taman B",
+        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
+        "address":"Jl. X Kota Bandung",
+        "lat":"-6.9097138",
+        "lon":"107.6102038"
+    },
+    {
+        "id":2,
+        "name":"Taman C",
+        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
+        "address":"Jl. X Kota Bandung",
+        "lat":"-6.9097138",
+        "lon":"107.6102038"
+    },
+    {
+        "id":3,
+        "name":"Taman D",
+        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
+        "address":"Jl. X Kota Bandung",
+        "lat":"-6.9097138",
+        "lon":"107.6102038"
+    }    
+]

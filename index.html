@@ -30,14 +30,57 @@
           </header>
 
           <main role="main" class="inner cover">
-            <h1 class="cover-heading" id="coverhead1">Selamat datang.</h1>
+            <h1 class="cover-heading" id="coverhead1">Selamat datang</h1>
             <p class="lead" id="coverpar1">Silahkan gunakan search box untuk mencari taman yang ingin dicari</p>
             <p class="lead">
-			<form>
-              <input type="text" class ="textinput" id="input1" onkeyup="showResult(this.value)"><br>
-              <div id="predictionSearch"></div>
-              <!--<input type="button" class = "searchbutton" id="button1" value="Cari">-->
-			  </form>
+              <input type="text" class ="textinput" id="input1" ><br>
+              <br>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" id="button1">
+                Cari Taman
+              </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button1">
+                Tampilkan list taman
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Taman X</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body anoa">
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">List Taman</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </p>
           </main>
 
@@ -56,11 +99,47 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/predictiveSearch.js"></script>
-
+    <script>
+      $(document).ready(function() {
+        $('.carousel').carousel();
+        $('#input1').keypress(function(e){
+          if(e.keyCode==13)
+          $('#button1').click();
+        });
+        $("#button1").on("click", function(){
+              // Only change code below this line.
+          $.getJSON("./json/taman.json", function(json) {            
+            var html = "";
+            var query = $('#input1').val();
+            var r = new RegExp(query, "i");
+            var judul = '#exampleModalLongTitle';
+            var BreakException = {};
+            var found = false;
+          // Only change code below this line.
+    
+          json.forEach(function(val) {
+            var keys = Object.keys(val);
+            var str = val['name']; 
+            var res = str.match(r);
+            if (res!==null) {
+              html += "<div class = 'cat'>";
+              html += '<img src="'+ val['imageLink']+ '">'  ;  
+              $(judul).html(str);
+              html += "</div><br>";
+            }
+            
+          });
+          
+          
+          // Only change code above this line.
+          $('.anoa').html(html);
+          });
+        });        
+      });
+    </script>
 </body></html>
