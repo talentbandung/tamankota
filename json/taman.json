@@ -5,17 +5,17 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jalan Merdeka No.9, Babakan Ciamis, Sumur Bandung, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
-        "lat":"-6.914035",
-        "lon":"107.610158"
+        "lat":-6.914035,
+        "lon":107.610158
     },
     {
         "id":1,
         "name":"Taman Cikapayang",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"/img/cikapayang.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Ir. H.Djuanda No.79, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
-        "lat":"-6.898692",
-        "lon":"107.612447"
+        "lat":-6.898692,
+        "lon":107.612447
     },
     {
         "id":2,
@@ -23,8 +23,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Citarum No.23 A, Citarum, Bandung Wetan, Bandung, Jawa Barat",
-        "lat":"-6.903427",
-        "lon":"107.622896"
+        "lat":-6.903427,
+        "lon":107.622896
     },
     {
         "id":3,
@@ -32,8 +32,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jalan Kemuning No.4, Sumurbandung, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
-        "lat":"-6.913523",
-        "lon":"107.627195"
+        "lat":-6.913523,
+        "lon":107.627195
     },
     {
         "id":4,
@@ -41,8 +41,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Taman Sari No.66, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
-        "lat":"-6.898110",
-        "lon":"107.609243"
+        "lat":-6.898110,
+        "lon":107.609243
     },    
     {
         "id":5,
@@ -50,8 +50,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.898585",
-        "lon":"107.607666"
+        "lat":-6.898585,
+        "lon":107.607666
     },
     {
         "id":6,
@@ -59,8 +59,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Sumbawa No.32, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
-        "lat":"-6.911969",
-        "lon":"107.616075"
+        "lat":-6.911969,
+        "lon":107.616075
     },
     {
         "id":7,
@@ -68,8 +68,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Cisangkuy, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.901651",
-        "lon":"107.620514"
+        "lat":-6.901651,
+        "lon":107.620514
     },
     {
         "id":8,
@@ -77,8 +77,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.898117",
-        "lon":"107.609163"
+        "lat":-6.898117,
+        "lon":107.609163
     },
     {
         "id":9,
@@ -86,8 +86,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Bengawan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.910920",
-        "lon":"107.630509"
+        "lat":-6.910920,
+        "lon":107.630509
     },
     {
         "id":10,
@@ -95,8 +95,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",        
         "address":"Jl. X Kota Bandung",
-        "lat":"-6.912963",
-        "lon":"107.609600"
+        "lat":-6.912963,
+        "lon":107.609600
     },
     {
         "id":11,
@@ -104,8 +104,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Taman Pramuka, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat 40113",
-        "lat":"-6.910338",
-        "lon":"107.626782"
+        "lat":-6.910338,
+        "lon":107.626782
     },
     {
         "id":12,
@@ -113,8 +113,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Belitung No.1, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
-        "lat":"-6.911071",
-        "lon":"107.613487"
+        "lat":-6.911071,
+        "lon":107.613487
     },
     {
         "id":13,
@@ -122,8 +122,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jalan Taman Cibeunying Selatan, Cihapit, Bandung Wetan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.904696",
-        "lon":"107.624257"
+        "lat":-6.904696,
+        "lon":107.624257
     },
     {
         "id":14,
@@ -131,8 +131,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Saparua, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.909279",
-        "lon":"107.615938"
+        "lat":-6.909279,
+        "lon":107.615938
     },
     {
         "id":15,
@@ -140,8 +140,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Lap. Supratman No.1, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.907739",
-        "lon":"107.629518"
+        "lat":-6.907739,
+        "lon":107.629518
     },
     {
         "id":16,
@@ -149,8 +149,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jalan A.H. Nasution, Ujung Berung, Cigending, Ujung Berung, Kota Bandung, Jawa Barat",
-        "lat":"-6.913633",
-        "lon":"107.701594"
+        "lat":-6.913633,
+        "lon":107.701594
     },
     {
         "id":17,
@@ -158,8 +158,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Palasari No.1, Malabar, Lengkong, Kota Bandung, Jawa Barat",
-        "lat":"-6.925521",
-        "lon":"107.623734"
+        "lat":-6.925521,
+        "lon":107.623734
     },
     {
         "id":18,
@@ -167,8 +167,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Dipatiukur, Lebakgede, Coblong, Kota Bandung, Jawa Barat ",
-        "lat":"-6.895662",
-        "lon":"107.616632"
+        "lat":-6.895662,
+        "lon":107.616632
     },
     {
         "id":19,
@@ -176,8 +176,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Asia Afrika, Balonggede, Regol, Balonggede, Regol, Kota Bandung, Jawa Barat",
-        "lat":"-6.921927",
-        "lon":"107.607055"
+        "lat":-6.921927,
+        "lon":107.607055
     },
     {
         "id":20,
@@ -185,8 +185,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Ciliwung No.14, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
-        "lat":"-6.906094",
-        "lon":"107.626008"
+        "lat":-6.906094,
+        "lon":107.626008
     },
     {
         "id":21,
@@ -194,8 +194,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Siliwangi, Cipaganti, Coblong, Hegarmanah, Cidadap, Kota Bandung, Jawa Barat",
-        "lat":"-6.902282",
-        "lon":"107.607967"
+        "lat":-6.902282,
+        "lon":107.607967
     },
     {
         "id":22,
@@ -203,8 +203,8 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Cikapundung Tim., Braga, Sumur Bandung, Kota Bandung, Jawa Barat ",
-        "lat":"-6.920071",
-        "lon":"107.608835"
+        "lat":-6.920071,
+        "lon":107.608835
     },
     {
         "id":23,
@@ -212,7 +212,7 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"A white cat wearing a green helmet shaped melon on it's head. ",        
         "address":"Jl. Otto Iskandar Dinata, Balonggede, Regol, Kota Bandung, Jawa Barat",
-        "lat":"-6.923241",
-        "lon":"107.604962"
+        "lat":-6.923241,
+        "lon":107.604962
     }
 ]
