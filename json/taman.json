@@ -6,7 +6,8 @@
         "altText":"Foto Taman Vanda",        
         "address":"Jalan Merdeka No.9, Babakan Ciamis, Sumur Bandung, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.914035,
-        "lon":107.610158
+        "lon":107.610158,
+        "desc":""
     },
     {
         "id":1,
@@ -15,7 +16,8 @@
         "altText":"Foto Taman Cikapayang",        
         "address":"Jl. Ir. H.Djuanda No.79, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
         "lat":-6.898692,
-        "lon":107.612447
+        "lon":107.612447,
+        "desc":""
     },
     {
         "id":2,
@@ -24,7 +26,8 @@
         "altText":"Foto Taman Pustaka Bunga Cilaki",        
         "address":"Jl. Citarum No.23 A, Citarum, Bandung Wetan, Bandung, Jawa Barat",
         "lat":-6.903427,
-        "lon":107.622896
+        "lon":107.622896,
+        "desc":""
     },
     {
         "id":3,
@@ -33,7 +36,8 @@
         "altText":"Foto Taman Fotografi",        
         "address":"Jalan Kemuning No.4, Sumurbandung, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.913523,
-        "lon":107.627195
+        "lon":107.627195,
+        "desc":""
     },
     {
         "id":4,
@@ -42,7 +46,8 @@
         "altText":"Foto Taman Jomblo",        
         "address":"Jl. Taman Sari No.66, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
         "lat":-6.898110,
-        "lon":107.609243
+        "lon":107.609243,
+        "desc":""
     },    
     {
         "id":5,
@@ -51,7 +56,8 @@
         "altText":"Foto Taman Film",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898585,
-        "lon":107.607666
+        "lon":107.607666,
+        "desc":""
     },
     {
         "id":6,
@@ -60,7 +66,8 @@
         "altText":"Foto Taman Musik",        
         "address":"Jl. Sumbawa No.32, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911969,
-        "lon":107.616075
+        "lon":107.616075,
+        "desc":""
     },
     {
         "id":7,
@@ -69,7 +76,8 @@
         "altText":"Foto Taman Lansia",        
         "address":"Jl. Cisangkuy, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.901651,
-        "lon":107.620514
+        "lon":107.620514,
+        "desc":""
     },
     {
         "id":8,
@@ -78,7 +86,8 @@
         "altText":"Foto Taman Skateboard",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898117,
-        "lon":107.609163
+        "lon":107.609163,
+        "desc":""
     },
     {
         "id":9,
@@ -87,7 +96,8 @@
         "altText":"Foto Taman Superhero",        
         "address":"Jl. Bengawan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.910920,
-        "lon":107.630509
+        "lon":107.630509,
+        "desc":""
     },
     {
         "id":10,
@@ -96,7 +106,8 @@
         "altText":"Foto Taman Balai Kota",        
         "address":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.912963,
-        "lon":107.609600
+        "lon":107.609600,
+        "desc":""
     },
     {
         "id":11,
@@ -105,7 +116,8 @@
         "altText":"Foto Taman Pramuka",        
         "address":"Jl. Taman Pramuka, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat 40113",
         "lat":-6.910338,
-        "lon":107.626782
+        "lon":107.626782,
+        "desc":""
     },
     {
         "id":12,
@@ -114,7 +126,8 @@
         "altText":"Foto Taman Lalu Lintas",        
         "address":"Jl. Belitung No.1, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911071,
-        "lon":107.613487
+        "lon":107.613487,
+        "desc":""
     },
     {
         "id":13,
@@ -123,7 +136,8 @@
         "altText":"Foto Taman Cibeunying",        
         "address":"Jalan Taman Cibeunying Selatan, Cihapit, Bandung Wetan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.904696,
-        "lon":107.624257
+        "lon":107.624257,
+        "desc":""
     },
     {
         "id":14,
@@ -132,7 +146,8 @@
         "altText":"Foto Taman Inklusi",        
         "address":"Jl. Saparua, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.909279,
-        "lon":107.615938
+        "lon":107.615938,
+        "desc":""
     },
     {
         "id":15,
@@ -141,7 +156,8 @@
         "altText":"Foto Taman Aktif",        
         "address":"Jl. Lap. Supratman No.1, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.907739,
-        "lon":107.629518
+        "lon":107.629518,
+        "desc":""
     },
     {
         "id":16,
@@ -150,7 +166,8 @@
         "altText":"Foto Taman Alun - Alun Ujung Berung",        
         "address":"Jalan A.H. Nasution, Ujung Berung, Cigending, Ujung Berung, Kota Bandung, Jawa Barat",
         "lat":-6.913633,
-        "lon":107.701594
+        "lon":107.701594,
+        "desc":""
     },
     {
         "id":17,
@@ -159,7 +176,8 @@
         "altText":"Foto Taman Pers",        
         "address":"Jl. Palasari No.1, Malabar, Lengkong, Kota Bandung, Jawa Barat",
         "lat":-6.925521,
-        "lon":107.623734
+        "lon":107.623734,
+        "desc":""
     },
     {
         "id":18,
@@ -168,7 +186,8 @@
         "altText":"Foto Taman Gesit",        
         "address":"Jl. Dipatiukur, Lebakgede, Coblong, Kota Bandung, Jawa Barat ",
         "lat":-6.895662,
-        "lon":107.616632
+        "lon":107.616632,
+        "desc":""
     },
     {
         "id":19,
@@ -177,7 +196,8 @@
         "altText":"Foto Taman Alun - Alun Bandung",        
         "address":"Jl. Asia Afrika, Balonggede, Regol, Balonggede, Regol, Kota Bandung, Jawa Barat",
         "lat":-6.921927,
-        "lon":107.607055
+        "lon":107.607055,
+        "desc":""
     },
     {
         "id":20,
@@ -186,7 +206,8 @@
         "altText":"Foto Taman Pet Park",        
         "address":"Jl. Ciliwung No.14, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.906094,
-        "lon":107.626008
+        "lon":107.626008,
+        "desc":""
     },
     {
         "id":21,
@@ -195,7 +216,8 @@
         "altText":"Foto Taman Cikapundung",        
         "address":"Jl. Siliwangi, Cipaganti, Coblong, Hegarmanah, Cidadap, Kota Bandung, Jawa Barat",
         "lat":-6.902282,
-        "lon":107.607967
+        "lon":107.607967,
+        "desc":""
     },
     {
         "id":22,
@@ -204,7 +226,8 @@
         "altText":"Foto Cikapundung Riverspot",        
         "address":"Jl. Cikapundung Tim., Braga, Sumur Bandung, Kota Bandung, Jawa Barat ",
         "lat":-6.920071,
-        "lon":107.608835
+        "lon":107.608835,
+        "desc":""
     },
     {
         "id":23,
@@ -213,6 +236,7 @@
         "altText":"Foto Taman Tegal Lega",        
         "address":"Jl. Otto Iskandar Dinata, Balonggede, Regol, Kota Bandung, Jawa Barat",
         "lat":-6.923241,
-        "lon":107.604962
+        "lon":107.604962,
+        "desc":""
     }
 ]
