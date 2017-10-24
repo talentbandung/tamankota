@@ -39,7 +39,7 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" id="button1">
                 Cari Taman
               </button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button1">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button2">
                 Tampilkan list taman
               </button>
 
@@ -56,10 +56,10 @@
                     <div class="modal-body anoa">
                       <div class="taman">
                         <img id="tamanImg" alt="a">
-                          <h3 id="tamanHeader">Taman X</h3>   
-                          <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
-                          <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
-                          <h3>Peta</h3>
+                        <h3 id="tamanHeader">Taman X</h3>   
+                        <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
+                        <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
+                        <h3>Peta</h3>
                       </div>
                       <div id="map"></div>
                     </div>
@@ -81,8 +81,14 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
-                      
+                    <div class="modal-body" id="modal2">
+                      <div class="taman2">
+                        <img id="tamanImg" alt="a">
+                        <h3 id="tamanHeader">Taman X</h3>   
+                        <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
+                        <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
+                        <h3>Peta</h3>
+                      </div>
                     </div>
                     <div class="modal-footer">
                         
@@ -115,7 +121,6 @@
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/predictiveSearch.js"></script>
     <script>
     var currLat = 0;
     var currLng = 0;
@@ -156,7 +161,8 @@
               var keys = Object.keys(val);
               var valJudul = val['name']; 
               var res = valJudul.match(r);
-              if ((res!==null)&&((query !== "Taman")&&(query !== "taman"))) {
+              if ((!found)&&(res!==null)&&((query !== "Taman")&&(query !== "taman"))) {
+                found = true;
                 $('#tamanImg').attr('src',val['imageLink']);
                 $('#tamanImg').attr('alt',val['altText']);
                 $(judul).html(valJudul);              
@@ -182,13 +188,23 @@
                   google.maps.event.trigger(map, 'resize');
                 });
                 map.setCenter(myLatLolong);
+                var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
+                $("#directButton").attr("onclick",directLink); 
               }            
             });          
           // Only change code above this line.            
-            var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
-            $("#directButton").attr("onclick",directLink);         
+                    
           });
-        });        
+        });      
+        $("#button2").on("click", function(){
+          var html="";
+          $.getJSON("./json/taman.json", function(json) {
+            json.forEach(function(val) {
+              var keys = Object.keys(val);
+            });
+          });                                       
+        });  
+        $().onclick
       });
     </script>
     <script>
