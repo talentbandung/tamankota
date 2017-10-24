@@ -93,8 +93,8 @@
         "id":10,
         "name":"Taman Balai Kota",
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
-        "altText":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",        
-        "address":"Jl. X Kota Bandung",
+        "altText":"",        
+        "address":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.912963,
         "lon":107.609600
     },
