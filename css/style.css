@@ -23,3 +23,14 @@ body{
 	padding: 5px 30px 5px 30px;
 	font-size: 2em;
 }
+
+#map {
+	margin-top:10px;
+	height:400px;
+	width: 100%;
+  }
+
+.modal-body img {
+	width:100%;
+	height:auto;
+}

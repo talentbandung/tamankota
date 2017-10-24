@@ -54,11 +54,15 @@
                       </button>
                     </div>
                     <div class="modal-body anoa">
-                      
+                      <div class="taman"></div>
+                      <div id="map"></div>
+                      <p>aaaaaaaaaaaaaaa</p>
+                      <p>aaaaaaaaaaaaaaa</p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -100,6 +104,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery-3.2.1.min.js"></script>
+    
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -120,26 +125,60 @@
             var judul = '#exampleModalLongTitle';
             var BreakException = {};
             var found = false;
+            var myLatLong = {lat:0,lng:0};
           // Only change code below this line.
     
-          json.forEach(function(val) {
-            var keys = Object.keys(val);
-            var str = val['name']; 
-            var res = str.match(r);
-            if (res!==null) {
-              html += "<div class = 'cat'>";
-              html += '<img src="'+ val['imageLink']+ '">'  ;  
-              $(judul).html(str);
-              html += "</div><br>";
-            }
-            
-          });
-          
-          
+            json.forEach(function(val) {
+              var keys = Object.keys(val);
+              var str = val['name']; 
+              var res = str.match(r);
+              if (res!==null) {
+                html += '<img src="'+ val['imageLink']+ '">'  ;  
+                $(judul).html(str);              
+                myLatLong = {lat: val['lat'], lng: val['lon']};
+                map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 18,
+                  center: myLatLong
+                });
+                marker = new google.maps.Marker({
+                  map: map,
+                  position: myLatLong,
+                  title: 'Hello World!'
+                });
+                myLatLolong = myLatLong;
+                myLatLolong.lat+=0.001;
+                myLatLolong.lng-=0.0014;
+                map.setCenter(myLatLolong);
+                google.maps.event.addListenerOnce(map, 'idle', function() {
+                  google.maps.event.trigger(map, 'resize');
+                });
+                map.setCenter(myLatLolong);
+              }            
+            });          
           // Only change code above this line.
-          $('.anoa').html(html);
+            $('.taman').html(html);            
           });
         });        
       });
+    </script>
+    <script>
+    function initMap() {
+      var myLatLng = {lat: -25.363, lng: 131.044};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY27kn9izD2u0en0K0SRsX1S32LWMC2_4&callback=initMap">
     </script>
 </body></html>
