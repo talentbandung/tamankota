@@ -82,13 +82,7 @@
                       </button>
                     </div>
                     <div class="modal-body" id="modal2">
-                      <div class="taman2">
-                        <img id="tamanImg" alt="a">
-                        <h3 id="tamanHeader">Taman X</h3>   
-                        <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
-                        <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
-                        <h3>Peta</h3>
-                      </div>
+                      
                     </div>
                     <div class="modal-footer">
                         
@@ -198,13 +192,18 @@
         });      
         $("#button2").on("click", function(){
           var html="";
+          var myLatLong = {lat:0,lng:0};
           $.getJSON("./json/taman.json", function(json) {
             json.forEach(function(val) {
+              myLatLong = {lat: val['lat'], lng: val['lon']};
+              var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
               var keys = Object.keys(val);
+              html+='<div class="row" style="padding: 5px 0 5px 0;margin-bottom:10px;border-bottom:1px solid #e9ecef;"><div class="col-3"><img src="'+ val['imageLink'] +'" alt="'+val['altText']+'"></div><div class="col-6" style="text-align: left;"><h6>'+val['name']+'</h6><p style="font-size:0.8em;">'+val['address']+'</p><h7>'+ val['workHour'] +'</h7></div><div class="col-3"><button class="btn btn-success" onclick="'+directLink+'">Direction!</button></div></div>';              
             });
-          });                                       
+            $('#modal2').html(html);
+          });             
+          
         });  
-        $().onclick
       });
     </script>
     <script>
