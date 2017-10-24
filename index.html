@@ -54,13 +54,17 @@
                       </button>
                     </div>
                     <div class="modal-body anoa">
-                      <div class="taman"></div>
+                      <div class="taman">
+                        <img id="tamanImg" alt="a">
+                          <h3 id="tamanHeader">Taman X</h3>   
+                          <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
+                          <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
+                          <h3>Peta</h3>
+                      </div>
                       <div id="map"></div>
-                      <p>aaaaaaaaaaaaaaa</p>
-                      <p>aaaaaaaaaaaaaaa</p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-dismiss="modal" onclick="location.href = '#';">Go To Place!</button>
+                      <button type="button" id="directButton" class="btn btn-success" data-dismiss="modal" onclick="location.href = '#';">Go To Place!</button>
                       <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                     </div>
                     
@@ -113,15 +117,32 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/predictiveSearch.js"></script>
     <script>
+    var currLat = 0;
+    var currLng = 0;
+    function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }        
+    }
+    function showPosition(position) {
+      currLat = position.coords.latitude;
+      currLng = position.coords.longitude;
+    }
+    </script>
+    <script>
       $(document).ready(function() {
+        getLocation();
         $('.carousel').carousel();
         $('#input1').keypress(function(e){
           if(e.keyCode==13)
           $('#button1').click();
         });
         $("#button1").on("click", function(){
+          
               // Only change code below this line.
-          $.getJSON("./json/taman.json", function(json) {            
+          $.getJSON("./json/taman.json", function(json) {                                       
             var html = "";
             var query = $('#input1').val();
             var r = new RegExp(query, "i");
@@ -133,11 +154,16 @@
     
             json.forEach(function(val) {
               var keys = Object.keys(val);
-              var str = val['name']; 
-              var res = str.match(r);
-              if (res!==null) {
-                html += '<img src="'+ val['imageLink']+ '">'  ;  
-                $(judul).html(str);              
+              var valJudul = val['name']; 
+              var res = valJudul.match(r);
+              if ((res!==null)&&((query !== "Taman")&&(query !== "taman"))) {
+                $('#tamanImg').attr('src',val['imageLink']);
+                $('#tamanImg').attr('alt',val['altText']);
+                $(judul).html(valJudul);              
+                $('#tamanHeader').html(valJudul);              
+                var keterangan = "Alamat : " + val['address'] + "<br>Jam Buka : " + val['workHour'];
+                $('#tamanKeterangan').html(keterangan);
+                $('#tamanDeskripsi').html(val['desc']);
                 myLatLong = {lat: val['lat'], lng: val['lon']};
                 map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 18,
@@ -158,8 +184,9 @@
                 map.setCenter(myLatLolong);
               }            
             });          
-          // Only change code above this line.
-            $('.taman').html(html);            
+          // Only change code above this line.            
+            var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
+            $("#directButton").attr("onclick",directLink);         
           });
         });        
       });
