@@ -15,10 +15,10 @@
 	
   </head>
 
-  <body>
-
+  <body>    
+    
+    
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
@@ -30,18 +30,21 @@
           </header>
 
           <main role="main" class="inner cover">
+            <br>
             <h1 class="cover-heading" id="coverhead1">Selamat datang</h1>
             <p class="lead" id="coverpar1">Silahkan gunakan search box untuk mencari taman yang ingin dicari</p>
             <p class="lead">
               <input type="text" class ="textinput" id="input1" ><br>
               <br>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" id="button1">
-                Cari Taman
-              </button>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button2">
-                Tampilkan list taman
-              </button>
+              <div class="row"><div class="col-6">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" id="button1">
+                    Cari Taman
+                  </button>
+            </div><div class="col-6">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button2">
+                    Tampilkan list taman
+                  </button>
+            </div></div>
 
               <!-- Modal -->
               <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -106,7 +109,7 @@
       </div>
 
     </div>
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -155,7 +158,7 @@
               var keys = Object.keys(val);
               var valJudul = val['name']; 
               var res = valJudul.match(r);
-              if ((!found)&&(res!==null)&&((query !== "Taman")&&(query !== "taman"))) {
+              if ((!found)&&(res!==null)&&((query !== "Taman")&&(query !== "taman"))&&(query.length != 0)) {
                 found = true;
                 $('#tamanImg').attr('src',val['imageLink']);
                 $('#tamanImg').attr('alt',val['altText']);
@@ -182,9 +185,22 @@
                   google.maps.event.trigger(map, 'resize');
                 });
                 map.setCenter(myLatLolong);
-                var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
+                var directLink = "";
+                directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + val["searchQuery"]+"', '_blank');";
+
+                console.log(myLatLong["lat"],myLatLong["lng"])
                 $("#directButton").attr("onclick",directLink); 
-              }            
+              } else {
+                if (!found) {
+                  $(judul).html('Taman Tidak Ditemukan');              
+                  $('#tamanHeader').html('Taman yang anda cari tidak ada');     
+                  $('#tamanImg').attr('src','/img/notfound.png');         
+                  $('#tamanImg').attr('alt','Tidak Ada');
+                  $('#tamanKeterangan').html('');
+                  $('#tamanDeskripsi').html('');
+                }
+
+              }           
             });          
           // Only change code above this line.            
                     
@@ -196,9 +212,9 @@
           $.getJSON("./json/taman.json", function(json) {
             json.forEach(function(val) {
               myLatLong = {lat: val['lat'], lng: val['lon']};
-              var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + myLatLong["lat"] + "," + myLatLong["lng"]+"', '_blank');";
+              var directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + val["searchQuery"]+"', '_blank');";
               var keys = Object.keys(val);
-              html+='<div class="row" style="padding: 5px 0 5px 0;margin-bottom:10px;border-bottom:1px solid #e9ecef;"><div class="col-3"><img src="'+ val['imageLink'] +'" alt="'+val['altText']+'"></div><div class="col-6" style="text-align: left;"><h6>'+val['name']+'</h6><p style="font-size:0.8em;">'+val['address']+'</p><h7>'+ val['workHour'] +'</h7></div><div class="col-3"><button class="btn btn-success" onclick="'+directLink+'">Direction!</button></div></div>';              
+              html+='<div class="row" style="padding: 5px 0 5px 0;margin-bottom:10px;border-bottom:1px solid #e9ecef;"><div class="col-3"><img src="'+ val['imageLink'] +'" alt="'+val['altText']+'"></div><div class="col-6" style="text-align: left;"><h6>'+val['name']+'</h6><p style="font-size:0.8em;">'+val['address']+'</p><h7>'+ val['workHour'] +'</h7></div><div class="col-3"><button class="btn btn-success" onclick="'+directLink+'">Go!</button></div></div>';              
             });
             $('#modal2').html(html);
           });             
