@@ -5,8 +5,7 @@ body{
 
 .textinput {
 	background-color:white;
-	background-color:rgba(0,0,0,0);
-	border-color:black;
+	border-color:rgb(233, 233, 233);
 	border-radius:25px;
 	border-width:5px;
 	padding-left:10px;
@@ -30,7 +29,18 @@ body{
 	width: 100%;
   }
 
+  #button1, #button2 {
+	  width:100%;
+  }
+
 .modal-body img {
 	width:100%;
 	height:auto;
+}
+
+@media (max-width:768px) {
+	.btn-success {
+		width: 100%;
+		font-weight: 0.5em;
+	}
 }
