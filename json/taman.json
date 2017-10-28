@@ -5,8 +5,9 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"Foto Taman Vanda",        
         "address":"Jalan Merdeka No.9, Babakan Ciamis, Sumur Bandung, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
-        "lat":-6.914035,
-        "lon":107.610158,
+        "lat":-6.914074,
+        "lon":107.610176,
+        "searchQuery":"Taman+Vanda",
         "desc":"Taman Vanda terletak tepat di depan Kantor Perwakilan Bank Indonesia, dengan bentuknya yang segitiga mengakibatkan jalan merdeka menjadi bercabang. Tamannya tidak dipagar, kendaraan bisa diparkir di balai kota karena tidak bisa parkir di pinggir Taman Vanda.Di malam hari air mancurnya kadang selalu dinyalakan dan terdapat lampu yang menghiasi taman tersebut.",
         "workHour":"24 Jam"
     },
@@ -16,8 +17,9 @@
         "imageLink":"/img/cikapayang.jpg",
         "altText":"Foto Taman Cikapayang",        
         "address":"Jl. Ir. H.Djuanda No.79, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
-        "lat":-6.898692,
-        "lon":107.612447,
+        "lat":-6.898666,
+        "lon":107.612463,
+        "searchQuery":"Taman+Cikapayang",
         "desc":"Taman Cikapayang berada di bawah Jalan Layang Pasupati, taman ini mudah untuk diakses, jika ingin parkir harus memarkirkan kendaraan di Jl. Badak Singa.",
         "workHour":"24 Jam"
     },
@@ -29,6 +31,7 @@
         "address":"Jl. Citarum No.23 A, Citarum, Bandung Wetan, Bandung, Jawa Barat",
         "lat":-6.903427,
         "lon":107.622896,
+        "searchQuery":"Taman+Pustaka+Bunga",
         "desc":"","workHour":""
     },
     {
@@ -39,6 +42,7 @@
         "address":"Jalan Kemuning No.4, Sumurbandung, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.913523,
         "lon":107.627195,
+        "searchQuery":"Taman+Foto+Bandung",
         "desc":"","workHour":""
     },
     {
@@ -49,6 +53,7 @@
         "address":"Jl. Taman Sari No.66, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
         "lat":-6.898110,
         "lon":107.609243,
+        "searchQuery":"Taman+Pasupati+(Taman+Jomblo)",
         "desc":"","workHour":""
     },    
     {
@@ -59,6 +64,7 @@
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898585,
         "lon":107.607666,
+        "searchQuery":"Taman+Film",
         "desc":"","workHour":""
     },
     {
@@ -69,6 +75,7 @@
         "address":"Jl. Sumbawa No.32, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911969,
         "lon":107.616075,
+        "searchQuery":"Taman+Musik+Centrum",
         "desc":"","workHour":""
     },
     {
@@ -79,6 +86,7 @@
         "address":"Jl. Cisangkuy, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.901651,
         "lon":107.620514,
+        "searchQuery":"Taman+Lansia",
         "desc":"","workHour":""
     },
     {
@@ -89,6 +97,7 @@
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898117,
         "lon":107.609163,
+        "searchQuery":"Taman+Skateboard",
         "desc":"","workHour":""
     },
     {
@@ -99,6 +108,7 @@
         "address":"Jl. Bengawan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.910920,
         "lon":107.630509,
+        "searchQuery":"Taman+Super+Hero",
         "desc":"","workHour":""
     },
     {
@@ -109,6 +119,7 @@
         "address":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.912963,
         "lon":107.609600,
+        "searchQuery":"Taman+Balai+Kota+Bandung",
         "desc":"","workHour":""
     },
     {
@@ -119,6 +130,7 @@
         "address":"Jl. Taman Pramuka, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat 40113",
         "lat":-6.910338,
         "lon":107.626782,
+        "searchQuery":"Taman+Pramuka",
         "desc":"","workHour":""
     },
     {
@@ -129,6 +141,7 @@
         "address":"Jl. Belitung No.1, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911071,
         "lon":107.613487,
+        "searchQuery":"Taman+Lalu+Lintas+Ade+Irma+Suryani+Nasution",
         "desc":"","workHour":""
     },
     {
@@ -139,6 +152,7 @@
         "address":"Jalan Taman Cibeunying Selatan, Cihapit, Bandung Wetan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.904696,
         "lon":107.624257,
+        "searchQuery":"Taman+Cibeunying",
         "desc":"","workHour":""
     },
     {
@@ -149,6 +163,7 @@
         "address":"Jl. Saparua, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.909279,
         "lon":107.615938,
+        "searchQuery":"Taman+Inklusi",
         "desc":"","workHour":""
     },
     {
@@ -159,6 +174,7 @@
         "address":"Jl. Lap. Supratman No.1, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.907739,
         "lon":107.629518,
+        "searchQuery":"Active+Park",
         "desc":"","workHour":""
     },
     {
@@ -169,6 +185,7 @@
         "address":"Jalan A.H. Nasution, Ujung Berung, Cigending, Ujung Berung, Kota Bandung, Jawa Barat",
         "lat":-6.913633,
         "lon":107.701594,
+        "searchQuery":"Alun-alun+Ujung+Berung",
         "desc":"","workHour":""
     },
     {
@@ -179,6 +196,7 @@
         "address":"Jl. Palasari No.1, Malabar, Lengkong, Kota Bandung, Jawa Barat",
         "lat":-6.925521,
         "lon":107.623734,
+        "searchQuery":"Taman+Pers+Malabar",
         "desc":"","workHour":""
     },
     {
@@ -189,6 +207,7 @@
         "address":"Jl. Dipatiukur, Lebakgede, Coblong, Kota Bandung, Jawa Barat ",
         "lat":-6.895662,
         "lon":107.616632,
+        "searchQuery":"Taman+Gesit",
         "desc":"","workHour":""
     },
     {
@@ -199,6 +218,7 @@
         "address":"Jl. Asia Afrika, Balonggede, Regol, Balonggede, Regol, Kota Bandung, Jawa Barat",
         "lat":-6.921927,
         "lon":107.607055,
+        "searchQuery":"Alun+Alun+Bandung",
         "desc":"","workHour":""
     },
     {
@@ -209,6 +229,7 @@
         "address":"Jl. Ciliwung No.14, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.906094,
         "lon":107.626008,
+        "searchQuery":"Pet+Park",
         "desc":"","workHour":""
     },
     {
@@ -217,8 +238,9 @@
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"Foto Taman Cikapundung",        
         "address":"Jl. Siliwangi, Cipaganti, Coblong, Hegarmanah, Cidadap, Kota Bandung, Jawa Barat",
-        "lat":-6.902282,
-        "lon":107.607967,
+        "lat":-6.884473,
+        "lon":107.607088,
+        "searchQuery":"Teras+Cikapundung+BBWS",
         "desc":"","workHour":""
     },
     {
@@ -229,6 +251,7 @@
         "address":"Jl. Cikapundung Tim., Braga, Sumur Bandung, Kota Bandung, Jawa Barat ",
         "lat":-6.920071,
         "lon":107.608835,
+        "searchQuery":"Cikapundung+River+Spot",
         "desc":"","workHour":""
     },
     {
@@ -236,9 +259,10 @@
         "name":"Taman Tegal Lega",
         "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
         "altText":"Foto Taman Tegal Lega",        
-        "address":"Jl. Otto Iskandar Dinata, Balonggede, Regol, Kota Bandung, Jawa Barat",
-        "lat":-6.923241,
-        "lon":107.604962,
+        "address":"Jl. BKR No.185, Pelindung Hewan, Astanaanyar, Kota Bandung, Jawa Barat",
+        "lat":-6.936555,
+        "lon":107.604653,
+        "searchQuery":"Taman+Boulevard+Tega+Lega",
         "desc":"","workHour":""
     }
 ]
