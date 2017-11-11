@@ -11,7 +11,8 @@
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/cover.css" rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
 	
   </head>
 
@@ -62,7 +63,7 @@
                         <h3 id="tamanHeader">Taman X</h3>   
                         <p id="tamanKeterangan">Alamat : x<br>Jam Buka : 24 Jam</p>
                         <p id="tamanDeskripsi">Taman ini berada di dekat ini, untuk mengakses taman ini anda perlu parkir di dekat jalan ini, jika anda parkir menggunakan mobil bisa parkir dulu di ini</p>
-                        <h3>Peta</h3>
+                        <h3 id="mapHeader">Peta</h3>
                       </div>
                       <div id="map"></div>
                     </div>
@@ -100,7 +101,9 @@
 
           <footer class="mastfoot">
             <div class="inner">
-              
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3" id="button3">
+              <span class="fa fa-info-circle"></span> About
+              </button>
             </div>
           </footer>
 
@@ -174,6 +177,9 @@
               var res = valJudul.match(r);
               if ((!found)&&(res!==null)&&((query !== "Taman")&&(query !== "taman"))&&(query.length != 0)) {
                 found = true;
+                $('#map').show();
+                $('#mapHeader').show();
+                $('#directButton').show();
                 $('#tamanImg').attr('src',val['imageLink']);
                 $('#tamanImg').attr('alt',val['altText']);
                 $(judul).html(valJudul);              
@@ -212,12 +218,12 @@
                   $('#tamanImg').attr('alt','Tidak Ada');
                   $('#tamanKeterangan').html('');
                   $('#tamanDeskripsi').html('');
+                  $('#map').hide();
+                  $('#mapHeader').hide();
+                  $('#directButton').hide();
                 }
-
               }           
-            });          
-          // Only change code above this line.            
-                    
+            });             
           });
         });      
         $("#button2").on("click", function(){
