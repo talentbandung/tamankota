@@ -135,6 +135,13 @@
     </script>
     <script>
       $(document).ready(function() {
+        kamus = FuzzySet();
+        $.getJSON("./json/taman.json",function(json) {
+          json.forEach(function (val) {
+            var valJudul = val['name'];
+            kamus.add(valJudul);
+          });
+        });
         getLocation();
         $('.carousel').carousel();
         $('#input1').keypress(function(e){
@@ -143,17 +150,24 @@
         });
         $("#button1").on("click", function(){
           
-              // Only change code below this line.
+        
           $.getJSON("./json/taman.json", function(json) {                                       
             var html = "";
-            var query = $('#input1').val();
+            var input = $('#input1').val();
+            var fuzzyResult = kamus.get(input);
+            var query = ""
+            if (fuzzyResult === null) {
+              query = "###"
+            } else {
+              query = fuzzyResult[0][1];
+            }
+            
             var r = new RegExp(query, "i");
             var judul = '#exampleModalLongTitle';
             var BreakException = {};
             var found = false;
             var myLatLong = {lat:0,lng:0};
-          // Only change code below this line.
-    
+
             json.forEach(function(val) {
               var keys = Object.keys(val);
               var valJudul = val['name']; 
@@ -242,4 +256,5 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY27kn9izD2u0en0K0SRsX1S32LWMC2_4&callback=initMap">
     </script>
+    <script src="/js/fuzzyset.js"></script>
 </body></html>
