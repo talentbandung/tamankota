@@ -14,7 +14,7 @@
     {
         "id":1,
         "name":"Taman Cikapayang",
-        "imageLink":"/img/cikapayang.jpg",
+        "imageLink":"./img/cikapayang.jpg",
         "altText":"Foto Taman Cikapayang",        
         "address":"Jl. Ir. H.Djuanda No.79, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
         "lat":-6.898666,
