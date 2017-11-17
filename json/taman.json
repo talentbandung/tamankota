@@ -2,7 +2,7 @@
     {
         "id":0,
         "name":"Taman Vanda",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://tempatwisatadibandung.info/wp-content/uploads/2016/10/Taman-Vanda-Bandung-1.jpg",
         "altText":"Foto Taman Vanda",        
         "address":"Jalan Merdeka No.9, Babakan Ciamis, Sumur Bandung, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.914074,
@@ -26,7 +26,7 @@
     {
         "id":2,
         "name":"Taman Pustaka Bunga Cilaki",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://sebandung.com/wp-content/uploads/2014/02/Taman-Pustaka-Bunga-Bandung.jpg",
         "altText":"Foto Taman Pustaka Bunga Cilaki",        
         "address":"Jl. Citarum No.23 A, Citarum, Bandung Wetan, Bandung, Jawa Barat",
         "lat":-6.903427,
@@ -37,7 +37,7 @@
     {
         "id":3,
         "name":"Taman Fotografi",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://ceritakeluarga.files.wordpress.com/2016/01/img_1497.jpg",
         "altText":"Foto Taman Fotografi",        
         "address":"Jalan Kemuning No.4, Sumurbandung, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.913523,
@@ -48,7 +48,7 @@
     {
         "id":4,
         "name":"Taman Jomblo",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://segalainfo.com/wp-content/uploads/2016/11/Taman-Jomblo-Pasupati-Bandung.jpg",
         "altText":"Foto Taman Jomblo",        
         "address":"Jl. Taman Sari No.66, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat",
         "lat":-6.898110,
@@ -59,7 +59,7 @@
     {
         "id":5,
         "name":"Taman Film",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://i0.wp.com/www.tempatwisatamu.com/wp-content/uploads/2014/10/taman-film-2.jpg",
         "altText":"Foto Taman Film",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898585,
@@ -70,18 +70,18 @@
     {
         "id":6,
         "name":"Taman Musik",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://alzyress.files.wordpress.com/2014/08/2014-05-18-14-14-36.jpg",
         "altText":"Foto Taman Musik",        
         "address":"Jl. Sumbawa No.32, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911969,
         "lon":107.616075,
         "searchQuery":"Taman+Musik+Centrum",
-        "desc":"","workHour":""
+        "desc":"","workHour":"24 Jam"
     },
     {
         "id":7,
         "name":"Taman Lansia",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://1.bp.blogspot.com/-y8mhBZL0emk/VOapD4KQJAI/AAAAAAAABRo/GtRthUuTw1o/s1600/bandungview-taman-lansia-1.jpg",
         "altText":"Foto Taman Lansia",        
         "address":"Jl. Cisangkuy, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.901651,
@@ -92,18 +92,18 @@
     {
         "id":8,
         "name":"Taman Skateboard",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://jalan2.com/forum/uploads/monthly_2016_07/578cb208b3f2e_08tamanskateboard.jpg.6c4922277939bb46cc72dc74e3799cee.jpg",
         "altText":"Foto Taman Skateboard",        
         "address":"Jl. Layang Pasupati, Tamansari, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.898117,
         "lon":107.609163,
         "searchQuery":"Taman+Skateboard",
-        "desc":"","workHour":""
+        "desc":"","workHour":"24 Jam"
     },
     {
         "id":9,
         "name":"Taman Superhero",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://airebobichon.files.wordpress.com/2017/08/1-cdn2-tstatic-net.jpg",
         "altText":"Foto Taman Superhero",        
         "address":"Jl. Bengawan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.910920,
@@ -114,7 +114,7 @@
     {
         "id":10,
         "name":"Taman Balai Kota",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://1.bp.blogspot.com/-csEhT_cbmp8/VMzHhhAeUrI/AAAAAAAAAjI/mNNSsLovDlk/s1600/DSCN3533.JPG",
         "altText":"Foto Taman Balai Kota",        
         "address":"Jl. Wastukencana No.2, Babakan Ciamis, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.912963,
@@ -125,7 +125,7 @@
     {
         "id":11,
         "name":"Taman Pramuka",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://3.bp.blogspot.com/_zyIBfhRY3rM/S7K0H6fHTEI/AAAAAAAAAyA/l3iEmmkNgE0/w1200-h630-p-k-no-nu/peresmian_taman_pramuka_bandung_20081231_1510403453.jpg",
         "altText":"Foto Taman Pramuka",        
         "address":"Jl. Taman Pramuka, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat 40113",
         "lat":-6.910338,
@@ -136,7 +136,7 @@
     {
         "id":12,
         "name":"Taman Lalu Lintas Ade Irma Suryani Nasution",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://reportaseharga.com/wp-content/uploads/2016/02/Harga-Tiket-Masuk-Taman-Lalu-Lintas-Bandung.jpg",
         "altText":"Foto Taman Lalu Lintas",        
         "address":"Jl. Belitung No.1, Merdeka, Sumur Bandung, Kota Bandung, Jawa Barat",
         "lat":-6.911071,
@@ -147,7 +147,7 @@
     {
         "id":13,
         "name":"Taman Cibeunying",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://www.disparbud.jabarprov.go.id/wisata/fimages/Taman_Cibeunying.JPG",
         "altText":"Foto Taman Cibeunying",        
         "address":"Jalan Taman Cibeunying Selatan, Cihapit, Bandung Wetan, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.904696,
@@ -158,7 +158,7 @@
     {
         "id":14,
         "name":"Taman Inklusi",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://warawiriwae.files.wordpress.com/2016/04/img_1297-001.jpg",
         "altText":"Foto Taman Inklusi",        
         "address":"Jl. Saparua, Citarum, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.909279,
@@ -169,7 +169,7 @@
     {
         "id":15,
         "name":"Taman Aktif (Active Park)",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://assets.kompas.com/data/photo/2016/04/11/0911290menteng-resize780x390.jpg",
         "altText":"Foto Taman Aktif",        
         "address":"Jl. Lap. Supratman No.1, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.907739,
@@ -180,7 +180,7 @@
     {
         "id":16,
         "name":"Taman Alun - Alun Ujung Berung",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://trijayatrans.com/wp-content/uploads/2017/04/alun-alun-ujung-berung-1.jpg",
         "altText":"Foto Taman Alun - Alun Ujung Berung",        
         "address":"Jalan A.H. Nasution, Ujung Berung, Cigending, Ujung Berung, Kota Bandung, Jawa Barat",
         "lat":-6.913633,
@@ -191,7 +191,7 @@
     {
         "id":17,
         "name":"Taman Pers",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://www.serbabandung.com/wp-content/uploads/2016/01/taman-pers-malabar.jpg",
         "altText":"Foto Taman Pers",        
         "address":"Jl. Palasari No.1, Malabar, Lengkong, Kota Bandung, Jawa Barat",
         "lat":-6.925521,
@@ -202,7 +202,7 @@
     {
         "id":18,
         "name":"Taman Gesit",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://www.serbabandung.com/wp-content/uploads/2015/04/taman-gesit-@HiLo.jpg",
         "altText":"Foto Taman Gesit",        
         "address":"Jl. Dipatiukur, Lebakgede, Coblong, Kota Bandung, Jawa Barat ",
         "lat":-6.895662,
@@ -213,7 +213,7 @@
     {
         "id":19,
         "name":"Taman Alun - Alun Bandung",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://cdn2.tstatic.net/jabar/foto/bank/images/taman-alun-alun-bandung22.jpg",
         "altText":"Foto Taman Alun - Alun Bandung",        
         "address":"Jl. Asia Afrika, Balonggede, Regol, Balonggede, Regol, Kota Bandung, Jawa Barat",
         "lat":-6.921927,
@@ -224,7 +224,7 @@
     {
         "id":20,
         "name":"Taman Pet Park",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"https://www.klikhotel.com/klik/database/informasiSekitarLokasi/3406-807.jpg",
         "altText":"Foto Taman Pet Park",        
         "address":"Jl. Ciliwung No.14, Cihapit, Bandung Wetan, Kota Bandung, Jawa Barat",
         "lat":-6.906094,
@@ -235,7 +235,7 @@
     {
         "id":21,
         "name":"Taman Cikapundung",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"/img/bbws.jpg",
         "altText":"Foto Taman Cikapundung",        
         "address":"Jl. Siliwangi, Cipaganti, Coblong, Hegarmanah, Cidadap, Kota Bandung, Jawa Barat",
         "lat":-6.884473,
@@ -246,7 +246,7 @@
     {
         "id":22,
         "name":"Cikapundung Riverspot",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://3.bp.blogspot.com/-ZrJnWplwBD4/VUbIiQEEXJI/AAAAAAAAOx0/qMFETvU_SSg/s1600/Cikapundung1.jpg",
         "altText":"Foto Cikapundung Riverspot",        
         "address":"Jl. Cikapundung Tim., Braga, Sumur Bandung, Kota Bandung, Jawa Barat ",
         "lat":-6.920071,
@@ -257,7 +257,7 @@
     {
         "id":23,
         "name":"Taman Tegal Lega",
-        "imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg",
+        "imageLink":"http://ayobandung.com/images-bandung/post/articles/2016/03/07/7807/tegalega.jpg",
         "altText":"Foto Taman Tegal Lega",        
         "address":"Jl. BKR No.185, Pelindung Hewan, Astanaanyar, Kota Bandung, Jawa Barat",
         "lat":-6.936555,
