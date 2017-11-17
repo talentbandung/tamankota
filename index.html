@@ -109,13 +109,34 @@
                     <div class="modal-body" id="modal2">
                       <h6>Taman Kota Bandung</h6>
                       <p>Website ini berfungsi sebagai penunjuk arah pengguna mencari taman yang ada di kota bandung.</p>
-                      <p>Website ini juga tersedia dalam bentuk mobile apps Android dan iOS.</p>
+                      <p>Website ini juga tersedia dalam bentuk mobile apps.</p>
 
                       <p>Developer:</p>
-                        <ul>
-                          <li>Mahdiar Naufal</li>
-                        </ul>
+                      <span class="fa fa-play">  Mahdiar Naufal</span>
+                      <br>
+                      <span class="fa fa-play">  Tessa Angela</span>
+
+                    </div>
+                    <div class="modal-footer">
+                        
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle3">About</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" id="modal2">
+                      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIn5CC2eZB6Irsm4XFydTLXaE55_Djh3cb2Rsne_fQuBTCSQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
                     </div>
                     <div class="modal-footer">
                         
@@ -133,6 +154,9 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3" id="button3">
               <span class="fa fa-info-circle"></span> About
               </button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4" id="button4">
+                <span class="fa fa-plus"></span> Tambah Taman
+                </button>
             </div>
           </footer>
 
@@ -195,7 +219,7 @@
             }
             
             var r = new RegExp(query, "i");
-            var judul = '#exampleModalLongTitle';
+            var judul = '#exampleModalLongTitle1';
             var BreakException = {};
             var found = false;
             var myLatLong = {lat:0,lng:0};
