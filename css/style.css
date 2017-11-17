@@ -29,13 +29,17 @@ body{
 	width: 100%;
   }
 
-#button1, #button2,#button3 {
+#button1, #button2,#button3,#button4 {
 	width:100%;
 }
 
 #button3 {
 	background-color: #7a7a7a;
 	border-color:#7a7a7a;
+}
+#button4 {
+	background-color: #60cc8a;
+	border-color:#60cc8a;
 }
 
 .modal-body img {
