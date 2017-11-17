@@ -235,7 +235,7 @@
     {
         "id":21,
         "name":"Taman Cikapundung",
-        "imageLink":"/img/bbws.jpg",
+        "imageLink":"./img/bbws.jpg",
         "altText":"Foto Taman Cikapundung",        
         "address":"Jl. Siliwangi, Cipaganti, Coblong, Hegarmanah, Cidadap, Kota Bandung, Jawa Barat",
         "lat":-6.884473,
