@@ -312,9 +312,9 @@
           var minWorkHour;
 
           json.forEach(function (val) {
-            if (Math.sqrt(((minLat * minLat) + (minLon * minLon)) > (Math.sqrt(((val["lat"]-currLat)*(val["lat"]-currLat)) + ((val["lon"]-currLng)*(val["lon"]-currLng)))))) {
-              minLat = (val["lat"]-currLat);
-              minLon = (val["lon"]-currLng);
+            if (Math.sqrt(((minLat * minLat) + (minLon * minLon)) > (Math.sqrt(((Math.abs(val["lat"]-currLat))*(Math.abs(val["lat"]-currLat))) + ((Math.abs(val["lon"]-currLng))*(Math.abs(val["lon"]-currLng))))))) {
+              minLat = (Math.abs(val["lat"]-currLat));
+              minLon = (Math.abs(val["lon"]-currLng));
               minId = val["id"];
               minImageLink = val["imageLink"];
               minName = val["name"];
