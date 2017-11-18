@@ -13,7 +13,7 @@ body{
 }
 
 #input1 {
-	width:300px;
+	width:80%;
 }
 
 #input1::-webkit-input-placeholder { /* Chrome/Opera/Safari */
