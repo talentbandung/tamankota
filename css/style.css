@@ -87,11 +87,11 @@ body{
 		width: 100%;
 		font-weight: 0.5em;
 	}
-	.masthead {
-		margin-bottom: 0;
-	}
+	
 }
-
+.masthead {
+	margin-bottom: 0;
+}
 .mastfoot .inner {
 	margin:0;
     padding:0;
