@@ -87,6 +87,9 @@ body{
 		width: 100%;
 		font-weight: 0.5em;
 	}
+	.masthead {
+		margin-bottom: 0;
+	}
 }
 
 .mastfoot .inner {
