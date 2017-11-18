@@ -313,6 +313,8 @@
 
           json.forEach(function (val) {
             if (Math.sqrt(((minLat * minLat) + (minLon * minLon)) > (Math.sqrt(((val["lat"]-currLat)*(val["lat"]-currLat)) + ((val["lon"]-currLng)*(val["lon"]-currLng)))))) {
+              minLat = (val["lat"]-currLat);
+              minLon = (val["lon"]-currLng);
               minId = val["id"];
               minImageLink = val["imageLink"];
               minName = val["name"];
