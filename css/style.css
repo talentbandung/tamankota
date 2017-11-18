@@ -12,6 +12,23 @@ body{
 	padding-right:10px;
 }
 
+#input1 {
+	width:300px;
+}
+
+#input1::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 0.8em;
+}
+#input1::-moz-placeholder { /* Firefox 19+ */
+	font-size: 0.8em;
+}
+#input1:-ms-input-placeholder { /* IE 10+ */
+	font-size: 0.8em;
+}
+#input1:-moz-placeholder { /* Firefox 18- */
+	font-size: 0.8em;
+}
+
 .searchbutton {
 	margin-top: 20px;
 	background-color:mediumspringgreen;
@@ -29,8 +46,26 @@ body{
 	width: 100%;
   }
 
-#button1, #button2,#button3,#button4 {
+#button1, #button2,#button3,#button4,#button5 {
 	width:100%;
+}
+#button1 {
+	width:80%;	
+	margin: auto;
+}
+#link2 {
+	text-decoration: underline;
+	color: #007bff;
+}
+
+#link5 {
+	text-decoration: underline;
+	color: #007bff;
+}
+
+#p1 {
+	font-size: 1.25em;
+	margin-left:auto;
 }
 
 #button3 {
@@ -57,4 +92,8 @@ body{
 .mastfoot .inner {
 	margin:0;
     padding:0;
+}
+
+.test {
+	background-color: rgba(255, 255, 255,0.5)
 }

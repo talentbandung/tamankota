@@ -26,27 +26,29 @@
 
           <header class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Taman Kota Bandung</h3>              
+              <h3 class="masthead-brand"></h3>              
             </div>
           </header>
 
           <main role="main" class="inner cover">
+            <div class="test">
             <br>
-            <h1 class="cover-heading" id="coverhead1">Selamat datang</h1>
+            <h1 class="cover-heading" id="coverhead1">Wilujeng Sumping</h1>
             <p class="lead" id="coverpar1">Silahkan gunakan search box untuk mencari taman yang ingin dicari</p>
             <p class="lead">
-              <input type="text" class ="textinput" id="input1" ><br>
+              <input type="text" class ="textinput" id="input1" placeholder="tulis nama taman yang akan dicari"><br>
               <br>
-              <div class="row"><div class="col-6">
+              <div class="row">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1" id="button1">
                     Cari Taman
                   </button>
-            </div><div class="col-6">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2" id="button2">
-                    Daftar Taman
-                  </button>
-            </div></div>
-
+            <br>
+          </div>
+          </p>
+          <p id="p1">atau lihat <a href="#exampleModalLong2" data-toggle="modal" data-target="#exampleModalLong2" id="link2">Daftar Taman</a> dan <a href="#exampleModalLong1" data-toggle="modal" data-target="#exampleModalLong1" id="link5">Taman Terdekat</a></p>
+          <br>
+          
+        </div>
               <!-- Modal -->
               <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -80,7 +82,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle2">List Taman</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle2">Daftar Taman</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -130,7 +132,7 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle3">About</h5>
+                      <h5 class="modal-title" id="exampleModalLongTitle4">About</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
@@ -279,7 +281,7 @@
             });             
           });
         });      
-        $("#button2").on("click", function(){
+        $("#link2").on("click", function(){
           var html="";
           var myLatLong = {lat:0,lng:0};
           $.getJSON("./json/taman.json", function(json) {
@@ -293,6 +295,71 @@
           });             
           
         });  
+      });
+      $("#link5").on("click", function(){
+        $.getJSON("./json/taman.json",function(json) {
+          var minId;
+          var minLat = 99999999;
+          var minLon = 99999999;
+          var minImageLink;
+          var minName;
+          var minAddress;
+          var minAltText;
+          var minQuerry;
+          var minMyLat;
+          var minMyLon;
+          var minDesc;
+          var minWorkHour;
+
+          json.forEach(function (val) {
+            if (Math.sqrt(((minLat * minLat) + (minLon * minLon)) > (Math.sqrt(((val["lat"]-currLat)*(val["lat"]-currLat)) + ((val["lon"]-currLng)*(val["lon"]-currLng)))))) {
+              minId = val["id"];
+              minImageLink = val["imageLink"];
+              minName = val["name"];
+              minAddress = val["address"];
+              minAltText = val["altText"];
+              minQuerry = val["searchQuerry"];
+              minMyLat = val["lat"];
+              minMyLon = val["lon"];
+              minWorkHour = val["workHour"];
+              minDesc = val["desc"];
+            }
+          });
+
+          $('#map').show();
+          $('#mapHeader').show();
+          $('#directButton').show();
+          $('#tamanImg').attr('src',minImageLink);
+          $('#tamanImg').attr('alt',minAltText);
+          var judul = '#exampleModalLongTitle1';
+          $(judul).html(minName);              
+          $('#tamanHeader').html(minName);              
+          var keterangan = "Alamat : " + minAddress + "<br>Jam Buka : " + minWorkHour;
+          $('#tamanKeterangan').html(keterangan);
+          $('#tamanDeskripsi').html(minDesc);
+          myLatLong = {lat: minMyLat, lng: minMyLon};
+          map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: myLatLong
+          });
+          marker = new google.maps.Marker({
+            map: map,
+            position: myLatLong,
+            title: 'Hello World!'
+          });
+          myLatLolong = myLatLong;
+          myLatLolong.lat+=0.001;
+          myLatLolong.lng-=0.0014;
+          map.setCenter(myLatLolong);
+          google.maps.event.addListenerOnce(map, 'idle', function() {
+            google.maps.event.trigger(map, 'resize');
+          });
+          map.setCenter(myLatLolong);
+          var directLink = "";
+          directLink = "window.open('https://www.google.com/maps/dir/?api=1&origin=" + currLat + "," + currLng + "&destination=" + minQuerry+"', '_blank');";
+
+          $("#directButton").attr("onclick",directLink); 
+        });
       });
     </script>
     <script>
